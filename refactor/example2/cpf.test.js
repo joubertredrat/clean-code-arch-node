@@ -1,4 +1,4 @@
-const cpf = require("./example2");
+const cpf = require("./cpf");
 
 test("Deve validar um CPF com sucesso", function () {
     const number = "13898463699"
