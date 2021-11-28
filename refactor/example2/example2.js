@@ -1,9 +1,11 @@
+const CPF_LENGTH = 11
+
 exports.validate = function (str) {
     if (str == null || str == undefined) {
         return false
     }
     str = str.replace(/\D/g, "");
-    if (str.length != 11) {
+    if (str.length != CPF_LENGTH) {
         return false
     }
 
