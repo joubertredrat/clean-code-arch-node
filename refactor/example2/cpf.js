@@ -25,8 +25,6 @@ exports.validate = function (str) {
         sum += (numbers[i] * j)
     }
     rest = sum % 11
-    console.log(rest)
-    console.log(rest < 2)
     digit2 = rest >= 2 ? 11 - rest : 0
 
     return numbers[10] == digit2   

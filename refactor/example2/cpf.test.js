@@ -5,6 +5,16 @@ test("Deve validar um CPF com sucesso", function () {
     expect(cpf.validate(number)).toBeTruthy();
 });
 
+test("Deve validar outro CPF com sucesso", function () {
+    const number = "64627007000"
+    expect(cpf.validate(number)).toBeTruthy();
+});
+
+test("Deve validar mais um CPF com sucesso", function () {
+    const number = "00398744009"
+    expect(cpf.validate(number)).toBeTruthy();
+});
+
 test("Deve validar um CPF com máscara com sucesso", function () {
     const number = "138.984.636-99"
     expect(cpf.validate(number)).toBeTruthy();
